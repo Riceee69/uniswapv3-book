@@ -30,7 +30,7 @@ contract UniswapV3Pool {
 }
 ```
 
-This is mapping where keys are `int16`'s and values are words (`uint256`). Imagine an infinite continuous array of ones and zeros:
+This is mapping where keys are words (`int16`) and values are 256-bit bitmap corresponding to that word (`uint256`). Imagine an infinite continuous array of ones and zeros:
 
 ![Tick indexes in tick bitmap](images/tick_bitmap.png)
 
